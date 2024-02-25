@@ -1,0 +1,142 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    li {
+        list-style: none;
+
+        a {
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.2s ease-in-out;
+
+
+
+            &:hover {
+                color: var(--color-orange);
+            }
+        }
+
+    }
+}
+
+.cta {
+    display: inline-block;
+    border: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--color-orange);
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    transform: scale(1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: var(--text-light) !important;
+        transform: scale(1.02);
+    }
+}
+
+// Mobile
+
+.btnMobileMenu {
+    width: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    cursor: pointer;
+
+    &:hover .line {
+        width: 100%;
+    }
+
+    .line {
+        transition: width 0.2s ease-in-out;
+        border-radius: 3px;
+        height: 3px;
+        background-color: var(--text-light);
+    }
+
+    .lineTop {
+        width: 80%;
+    }
+
+    .lineMiddle {
+        width: 60%;
+    }
+
+    .lineBottom {
+        width: 90%;
+    }
+}
+
+
+
+.mobileMenu {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+
+        padding: 0;
+        min-width: max-content;
+        width: 100%;
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        li {
+            text-align: center;
+            font-size: clamp(1.2rem, 10vw, 2rem);
+
+            a {
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+}
+
+.mobileMenuActive {
+    transform: translateX(0px);
+}
+
+.menuClose {
+    font-size: clamp(1.2rem, 10vw, 3rem);
+    border: none;
+    background: transparent;
+    color: var(--text-light);
+    margin-top: 8rem;
+}
+
+.active {
+    user-select: none;
+    opacity: 0.5;
+
+    &:hover {
+        color: var(--text-light) !important;
+    }
+}

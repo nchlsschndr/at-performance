@@ -1,0 +1,59 @@
+.popup {
+    background-color: var(--color-dark);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+.popupContent {
+    padding: 1rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    h3 {
+        margin: 0
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: var(--color-gray);
+        font-weight: 700;
+        text-shadow: 0 0rem 1rem var(--text-dark);
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-orange);
+            color: var(--text-light);
+        }
+    }
+}
+
+.instagram {
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transition: background-size 0.2s ease-in-out;
+
+    &:hover {
+        background-size: 200% auto;
+        // background: linear-gradient(225deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+}
+
+.whatsapp {
+    background: #00e676;
+    background: linear-gradient(45deg, #00e676 0%, #00e676 25%, #00e676 50%, #00e676 75%, #00e676 100%);
+    transition: none !important;
+
+    &:hover {
+        background: #0abe67 !important;
+        background-size: 200% auto;
+    }
+}

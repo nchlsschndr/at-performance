@@ -1,0 +1,47 @@
+@import "../../../styles/breakpoints.scss";
+
+.wrapper {
+    background-color: white;
+    color: var(--text-dark);
+    padding: 0.5rem 0;
+    z-index: 99999;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        transition: color .2s ease-in-out;
+
+        @include md {
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            color: var(--color-orange);
+            text-decoration: underline;
+
+        }
+    }
+}
+
+.social {
+
+
+    a {
+        font-size: 1.5rem;
+
+
+        // Insta größer
+        a:first-child {
+            font-size: 1.5rem;
+        }
+    }
+}
