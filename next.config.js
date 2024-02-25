@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    basePath: "/at-performance",
+    output: "export",
     reactStrictMode: true,
-    swcMinify: true,
-    images: {
-        domains: ["imgur.com", "i.imgur.com"],
-    },
 };
 
 module.exports = nextConfig;
