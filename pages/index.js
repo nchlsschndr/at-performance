@@ -6,6 +6,7 @@ import { Intro } from "../components/sections/Intro";
 import { SellingPoints } from "../components/sections/SellingPoints";
 import { CarSelection } from "../components/sections/CarSelection";
 import { carData } from "../utils/carData";
+import { OfflineNotice } from "../components/offlineNotice";
 
 export default function Fahrzeuge() {
     const [cars, setCars] = useState([
@@ -32,6 +33,7 @@ export default function Fahrzeuge() {
     }, []);
     return (
         <Layout desc="Sport- und Luxusfahrzeug Autovermietung in Saarbrücken.">
+            <OfflineNotice />
             <main>
                 <Header car={featuredCar} />
                 <SellingPoints />
