@@ -10,6 +10,7 @@
     height: 100%;
     display: grid;
     place-items: center;
+    backdrop-filter: blur(5px);
 
     div {
         box-shadow: 2px 2px 30px black;
