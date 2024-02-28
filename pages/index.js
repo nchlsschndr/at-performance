@@ -6,7 +6,7 @@ import { Intro } from "../components/sections/Intro";
 import { SellingPoints } from "../components/sections/SellingPoints";
 import { CarSelection } from "../components/sections/CarSelection";
 import { carData } from "../utils/carData";
-import { OfflineNotice } from "../components/offlineNotice";
+import { OfflineNotice } from "../components/OfflineNotice";
 
 export default function Fahrzeuge() {
     const [cars, setCars] = useState([
